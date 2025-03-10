@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Développeur</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">MC</div>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h1>Développeur Full-Stack</h1>
+        <p>Création d'expériences web modernes et performantes</p>
+        <a href="#projects" class="btn">Voir mes projets</a>
+    </section>
+    <div class="separator"></div>
+    <section id="about" class="about-section reveal">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>À propos de moi</h2>
+                <p>Je suis un(e) développeur(se) passionné(e) par la création d'expériences web modernes et interactives. Toujours en quête de nouveaux défis, je recherche une alternance pour perfectionner mes compétences et travailler sur des projets concrets.</p>
+                <a href="#contact" class="btn">Me Contacter</a>
+            </div>
+            <div class="about-image">
+                <img src="img/about-image.svg" alt="Illustration Développeur">
+            </div>
+        </div>
+        <div class="about-features">
+            <div class="feature">
+                <img src="img/icon1.svg" alt="Icon Expertise">
+                <h3>Expertise Technique</h3>
+                <p>Maîtrise des technologies modernes du développement web.</p>
+            </div>
+            <div class="feature">
+                <img src="img/icon2.svg" alt="Icon Créativité">
+                <h3>Créativité</h3>
+                <p>Conception de solutions innovantes adaptées aux besoins.</p>
+            </div>
+            <div class="feature">
+                <img src="img/icon3.svg" alt="Icon Collaboration">
+                <h3>Collaboration</h3>
+                <p>Travail en équipe et communication efficace pour réussir.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="skills-intro" class="reveal">
+        <div class="container">
+            <div class="text-content">
+                <h3>Ce que je peux vous apporter avec l'IA et le Développement</h3>
+                <p>Grâce à mon expertise en intelligence artificielle et en développement web, je vous aide à automatiser vos processus, optimiser vos performances et transformer vos idées en solutions concrètes. Que ce soit pour l'amélioration de votre productivité, la création d'outils intelligents ou l'analyse de données, mes compétences sont au service de votre entreprise.</p>
+            </div>
+            <div class="image-content">
+                <img src="img/about-img.png" alt="Illustration IA et Développement">
+            </div>
+        </div>
+    </section>
+    <div class="separator"></div>
+    <section id="skills" class="reveal">
+        <h2>Compétences</h2>
+        <p>Découvrez les technologies et méthodologies que j'utilise pour apporter des solutions innovantes et performantes.</p>
+        <div class="skills-grid">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Vue.js</div>
+            <div class="skill">React</div>
+            <div class="skill">PHP</div>
+            <div class="skill">Python</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">IA Générative</div>
+            <div class="skill">Automatisation</div>
+            <div class="skill">Optimisation des Processus</div>
+        </div>
+    </section>
+    <div class="separator"></div>
+
+    <section id="projects" class="reveal">
+        <h2>Projets réalisés</h2>
+        <div class="projects-container">
+            <a href="#" class="project" data-video="videos/project1.mp4" data-title="Projet 1"
+                data-description="Application web moderne avec React et Node.js.">
+                <h3>Projet 1</h3>
+            </a>
+            <a href="#" class="project" data-video="videos/project2.mp4" data-title="Projet 2"
+                data-description="Site vitrine interactif développé avec Vue.js et Tailwind CSS.">
+                <h3>Projet 2</h3>
+            </a>
+            <a href="#" class="project" data-video="videos/project3.mp4" data-title="Projet 3"
+                data-description="API REST sécurisée en PHP et MySQL.">
+                <h3>Projet 3</h3>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Popup Video Modal -->
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="popup" id="popup">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <h2 id="popup-title">Titre de la vidéo</h2>
+        <p id="popup-description">Description de la vidéo ici...</p>
+        <video id="popup-video" width="100%" height="315" controls>
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+    
+    
+
+    <section id="contact" class="reveal">
+        <h2>Me Contacter</h2>
+        <p>Email : <a href="mailto:exemple@mail.com">exemple@mail.com</a></p>
+        <p>LinkedIn : <a href="#" target="_blank">Mon profil</a></p>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2025 - Mon Portfolio</p>
+    </footer>
+</body>
+</html>
